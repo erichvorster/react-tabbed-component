@@ -11,7 +11,7 @@ const Tab = () => {
     activeIndex === index ? className : "";
 
   return (
-    <div>
+    <div className="tab-container">
       <div className="tabs">
         <button
           className={`tab ${checkActive(1, "active")}`}

@@ -1,13 +1,29 @@
+
+*{
+  padding:0; 
+  margin:0;
+  box-sizing: border-box;
+}
+
+.tab-container{
+  display: flex;
+  margin:2rem;
+}
+
 .tabs {  
     display: flex;  
+    flex-direction: column;
   }
   .tab {  
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 14rem;
     background: lightsteelblue; 
-    padding: 2em 0;  
+    padding: 2em 1em 2em 0;  
     border: none;
+    transition: all 0.3s ease;
+    clip-path: polygon(0 0, 83% 0, 83% 25%, 100% 51%, 83% 78%, 83% 100%, 0 100%, 0 0);
+    border: 1px solid steelblue;
   }
   .tab:not(:last-child) {
     border-right: 1px solid steelblue;  
@@ -16,11 +32,26 @@
     background: steelblue;
     font-weight: bold;
   }
+  .panels{
+    max-width: 20rem;
+    transform: translateX(-40px);
+    z-index: -1;
+  }
   .panel {
     display: none;
     background-color: #eaeaea;
     padding: 10px;
+    height:100%;
+    
   }
   .panel.active {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  p{
+    transition: all 0.3s ease;
+    padding-left: 2rem;
   }

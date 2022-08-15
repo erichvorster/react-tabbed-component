@@ -1,0 +1,25 @@
+.accordion{
+max-width: 40rem;
+border:1px solid steelblue;
+
+}
+
+.accordion-title{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem;
+    border-bottom:1px solid steelblue;
+    background-color: lightsteelblue;
+    transition: all 0.5s ease;
+}
+
+.icon{
+    font-size: 2rem;
+    transition: all 0.5s ease;
+}
+.accordion-content{
+    padding:1rem;
+    transition: all 0.5s ease;
+    background-color: #eaeaea;
+}
